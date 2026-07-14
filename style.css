@@ -355,7 +355,7 @@ HERO SECTION
 
   object-fit: cover;
 
-  z-index: -2;
+  z-index: 0;
 }
 
 .hero::before {
@@ -372,7 +372,7 @@ HERO SECTION
     rgba(10, 30, 60, 0.15) 100%
   );
 
-  z-index: -1;
+  z-index: 2;
 }
 
 .hero-content {
@@ -1348,8 +1348,8 @@ RESPONSIVE DESIGN
   }
 
   .hero{
-    min-height:85svh;
-    padding-bottom:80px;
+    min-height:100svh;
+    padding-bottom:100vh;
 }
 
 .hero-content{
@@ -1358,11 +1358,11 @@ RESPONSIVE DESIGN
 }
 
 .trust-bar{
-    margin-top:-20px;
+    margin-top:20px;
 }
 
 .hero-buttons{
-    margin-bottom:40px;
+    margin-bottom:-20px;
 }
 
   .hero h1 {
