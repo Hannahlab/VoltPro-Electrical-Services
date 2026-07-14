@@ -1,465 +1,642 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VoltPro Electrical Services | Professional Electricians</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="VoltPro Electrical Services provides professional electrical repairs, emergency callouts, wiring, lighting installations, DB board upgrades, and commercial electrical services.">
+    <title>VoltPro Electrical Services</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta
+      name="description"
+      content="Professional residential and commercial electrical services. Licensed electricians providing reliable installations, repairs and emergency call-outs."
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar container">
-            <a href="#" class="logo">
-                <i class="fa-solid fa-bolt"></i>
-                VoltPro
-            </a>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
+  </head>
 
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#why-us" class="nav-link">Why Us</a></li>
-                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                <li><a href="#areas" class="nav-link">Areas</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+  <body>
+    <header class="main-navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo"> VOLT<span>PRO</span> </a>
 
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <nav class="nav-menu">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#reviews">Reviews</a>
+        
         </nav>
+
+        <a href="tel:+15551234567" class="call-btn">
+          <span>📞</span>
+
+          <span>(555) 123-4567</span>
+        </a>
+      </div>
     </header>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source
+          src="https://res.cloudinary.com/kfcu2z4r/video/upload/v1783866630/15357261-uhd_2560_1440_24fps_ir18ub.mp4"
+          type="video/mp4"
+        />
+      </video>
 
-        <div class="container hero-content">
-            <div class="hero-text reveal">
-                <span class="hero-tag">Trusted Electrical Experts</span>
+      <div class="hero-overlay"></div>
 
-                <h1>Reliable Electrical Solutions For Homes & Businesses</h1>
+      <div class="container hero-content">
+        <span class="hero-badge">
+          Licensed • Insured • 24/7 Emergency Service
+        </span>
 
-                <p>
-                    VoltPro Electrical Services delivers professional electrical repairs,
-                    emergency callouts, installations, upgrades, and maintenance with
-                    safety, quality, and customer satisfaction at the core of everything we do.
-                </p>
+        <h1>
+          Reliable Electrical Solutions
 
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">
-                        Request a Quote
-                    </a>
+          <span> Built Around Safety & Quality </span>
+        </h1>
 
-                    <a href="tel:+27111234567" class="btn btn-secondary">
-                        <i class="fa-solid fa-phone"></i>
-                        Call Now
-                    </a>
-                </div>
+        <p>
+          From residential installations to large commercial projects, VoltPro
+          delivers dependable electrical workmanship backed by experienced
+          licensed electricians.
+        </p>
 
-                <div class="hero-stats">
-                    <div>
-                        <h3>10+</h3>
-                        <p>Years Experience</p>
-                    </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary"> Request a Quote </a>
 
-                    <div>
-                        <h3>2500+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-
-                    <div>
-                        <h3>24/7</h3>
-                        <p>Emergency Support</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-card reveal">
-                <div class="glass-card">
-                    <i class="fa-solid fa-bolt-lightning"></i>
-                    <h3>Emergency Electricians Available</h3>
-                    <p>
-                        Fast response for urgent electrical faults, outages,
-                        safety inspections, and repairs.
-                    </p>
-                </div>
-            </div>
+          <a href="#services" class="btn-secondary"> Our Services </a>
         </div>
+      </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="section">
-        <div class="container">
-            <div class="section-title reveal">
-                <span>Our Services</span>
-                <h2>Professional Electrical Services</h2>
-            </div>
+    <!-- ==========================================
+TRUST BAR
+========================================== -->
 
-            <div class="services-grid">
-
-                <div class="service-card reveal">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    <h3>Electrical Repairs</h3>
-                    <p>
-                        Fast diagnosis and repair of electrical faults,
-                        outlets, switches, breakers, and circuits.
-                    </p>
-                </div>
-
-                <div class="service-card reveal">
-                    <i class="fa-solid fa-triangle-exclamation"></i>
-                    <h3>Emergency Callouts</h3>
-                    <p>
-                        24/7 emergency response for urgent electrical issues
-                        and power failures.
-                    </p>
-                </div>
-
-                <div class="service-card reveal">
-                    <i class="fa-solid fa-plug-circle-bolt"></i>
-                    <h3>Wiring & Rewiring</h3>
-                    <p>
-                        Complete wiring solutions for renovations,
-                        extensions, and new installations.
-                    </p>
-                </div>
-
-                <div class="service-card reveal">
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <h3>Lighting Installation</h3>
-                    <p>
-                        Indoor, outdoor, LED, decorative, and security
-                        lighting installations.
-                    </p>
-                </div>
-
-                <div class="service-card reveal">
-                    <i class="fa-solid fa-microchip"></i>
-                    <h3>DB Board Upgrades</h3>
-                    <p>
-                        Modern and compliant DB board installations,
-                        upgrades, and inspections.
-                    </p>
-                </div>
-
-                <div class="service-card reveal">
-                    <i class="fa-solid fa-building"></i>
-                    <h3>Commercial Electrical Services</h3>
-                    <p>
-                        Reliable electrical solutions for offices,
-                        retail spaces, warehouses, and businesses.
-                    </p>
-                </div>
-
-            </div>
+    <section class="trust-bar">
+      <div class="container trust-container">
+        <div class="trust-item">
+          <span class="trust-number">10+</span>
+          <span class="trust-text">Years Experience</span>
         </div>
+
+        <div class="trust-item">
+          <span class="trust-number">5,000+</span>
+          <span class="trust-text">Projects Completed</span>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-number">24/7</span>
+          <span class="trust-text">Emergency Support</span>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-number">100%</span>
+          <span class="trust-text">Licensed & Insured</span>
+        </div>
+      </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section section-dark">
-        <div class="container about-grid">
+    <!-- ==========================================
+SERVICES
+========================================== -->
 
-            <div class="about-content reveal">
-                <span>About VoltPro</span>
-                <h2>Powering Properties With Confidence</h2>
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag"> WHAT WE DO </span>
 
-                <p>
-                    VoltPro Electrical Services is committed to providing
-                    safe, reliable, and high-quality electrical solutions
-                    for residential, commercial, and industrial clients.
-                </p>
+          <h2>Professional Electrical Services</h2>
 
-                <p>
-                    Our skilled electricians combine industry expertise,
-                    modern tools, and exceptional customer service to
-                    deliver outstanding results on every project.
-                </p>
-            </div>
-
-            <div class="about-box reveal">
-                <div class="glass-card">
-                    <h3>Safety First</h3>
-                    <p>
-                        Every project is completed according to
-                        professional electrical standards and regulations.
-                    </p>
-                </div>
-            </div>
-
+          <p>
+            We provide reliable residential and commercial electrical solutions
+            with exceptional workmanship and industry-leading safety standards.
+          </p>
         </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop"
+                alt="Residential Electrical"
+              />
+            </div>
+
+            <div class="service-content">
+              <h3>Residential Electrical</h3>
+
+              <p>
+                Wiring, lighting installations, panel upgrades, fault finding
+                and complete home electrical services.
+              </p>
+
+              <a href="#"> Learn More → </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop"
+                alt="Commercial Electrical"
+              />
+            </div>
+
+            <div class="service-content">
+              <h3>Commercial Projects</h3>
+
+              <p>
+                Professional electrical installations, maintenance and upgrades
+                for businesses, offices and retail spaces.
+              </p>
+
+              <a href="#"> Learn More → </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200&auto=format&fit=crop"
+                alt="Emergency Electrician"
+              />
+            </div>
+
+            <div class="service-content">
+              <h3>Emergency Call-Outs</h3>
+
+              <p>
+                Rapid response electrical repairs available when unexpected
+                problems put your home or business at risk.
+              </p>
+
+              <a href="#"> Learn More → </a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section id="why-us" class="section">
-        <div class="container">
+    <!-- ==========================================
+WHY CHOOSE VOLTPRO
+========================================== -->
 
-            <div class="section-title reveal">
-                <span>Why Choose Us</span>
-                <h2>Trusted By Homeowners & Businesses</h2>
-            </div>
+    <section id="about" class="why-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag"> WHY CHOOSE US </span>
 
-            <div class="features-grid">
+          <h2>Trusted Electrical Experts You Can Count On</h2>
 
-                <div class="feature-card reveal">
-                    <i class="fa-solid fa-certificate"></i>
-                    <h3>Licensed Professionals</h3>
-                    <p>
-                        Qualified electricians delivering safe and
-                        compliant workmanship.
-                    </p>
-                </div>
-
-                <div class="feature-card reveal">
-                    <i class="fa-solid fa-clock"></i>
-                    <h3>Fast Response Times</h3>
-                    <p>
-                        Quick turnaround and emergency support when
-                        you need it most.
-                    </p>
-                </div>
-
-                <div class="feature-card reveal">
-                    <i class="fa-solid fa-wallet"></i>
-                    <h3>Affordable Pricing</h3>
-                    <p>
-                        Transparent pricing with no hidden surprises.
-                    </p>
-                </div>
-
-                <div class="feature-card reveal">
-                    <i class="fa-solid fa-award"></i>
-                    <h3>Quality Workmanship</h3>
-                    <p>
-                        Professional installations and repairs built
-                        to last.
-                    </p>
-                </div>
-
-            </div>
+          <p>
+            We combine technical expertise with outstanding customer service,
+            delivering safe, reliable electrical solutions that stand the test
+            of time.
+          </p>
         </div>
+
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="why-icon">⚡</div>
+
+            <h3>Licensed Professionals</h3>
+
+            <p>
+              Every project is completed by qualified electricians who follow
+              the latest electrical regulations and safety standards.
+            </p>
+          </article>
+
+          <article class="why-card">
+            <div class="why-icon">🛡️</div>
+
+            <h3>Safety First</h3>
+
+            <p>
+              We never compromise on safety, using quality materials and proven
+              installation practices on every job.
+            </p>
+          </article>
+
+          <article class="why-card">
+            <div class="why-icon">⏱️</div>
+
+            <h3>Fast Response</h3>
+
+            <p>
+              Whether it's a scheduled installation or an emergency, we arrive
+              on time and complete the work efficiently.
+            </p>
+          </article>
+
+          <article class="why-card">
+            <div class="why-icon">⭐</div>
+
+            <h3>Quality Guaranteed</h3>
+
+            <p>
+              We stand behind every installation and repair with workmanship you
+              can trust and long-lasting results.
+            </p>
+          </article>
+        </div>
+      </div>
     </section>
 
-   <!-- Testimonials -->
-<section id="testimonials" class="section section-dark">
-    <div class="container">
+    <!-- ==========================================
+ABOUT VOLTPRO
+========================================== -->
 
-        <div class="section-title reveal">
-            <span>Testimonials</span>
-            <h2>What Our Customers Say</h2>
+    <section class="about-section">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200&auto=format&fit=crop"
+            alt="VoltPro Electrician"
+          />
         </div>
 
-        <div class="testimonial-grid">
+        <div class="about-content">
+          <span class="section-tag"> ABOUT VOLTPRO </span>
 
-            <div class="testimonial-card reveal">
-                <p>
-                    “VoltPro saved us during a major power outage late at night.
-                    They arrived within 40 minutes and quickly restored everything.
-                    Truly reliable emergency service.”
-                </p>
-                <h4>Thabo N. – Sandton</h4>
-            </div>
+          <h2>Powering Homes & Businesses With Confidence</h2>
 
-            <div class="testimonial-card reveal">
-                <p>
-                    “We hired them for a full office rewiring project.
-                    The work was clean, professional, and completed ahead of schedule.
-                    Highly recommend their team.”
-                </p>
-                <h4>Amanda J. – Randburg</h4>
-            </div>
+          <p>
+            VoltPro is committed to delivering premium electrical solutions for
+            residential, commercial and industrial clients. We focus on quality
+            workmanship, transparent communication and exceptional customer
+            care.
+          </p>
 
-            <div class="testimonial-card reveal">
-                <p>
-                    “Very affordable and honest electricians.
-                    They replaced our DB board and explained everything clearly.
-                    Great workmanship and customer service.”
-                </p>
-                <h4>Michael P. – Pretoria</h4>
-            </div>
+          <p>
+            From small electrical repairs to complete installations, our
+            experienced team approaches every project with professionalism and
+            attention to detail.
+          </p>
 
+          <div class="about-list">
+            <div class="about-item">✔ Licensed & Certified Electricians</div>
+
+            <div class="about-item">✔ Residential & Commercial Projects</div>
+
+            <div class="about-item">✔ Honest Pricing</div>
+
+            <div class="about-item">✔ Emergency Electrical Services</div>
+          </div>
+
+          <a href="#contact" class="btn-primary"> Get a Free Quote </a>
         </div>
-
-    </div>
-</section>
-
-    <!-- Service Areas -->
-    <section id="areas" class="section">
-        <div class="container">
-
-            <div class="section-title reveal">
-                <span>Service Areas</span>
-                <h2>Areas We Serve</h2>
-            </div>
-
-            <div class="areas-grid reveal">
-                <span>Johannesburg</span>
-                <span>Sandton</span>
-                <span>Midrand</span>
-                <span>Randburg</span>
-                <span>Roodepoort</span>
-                <span>Centurion</span>
-                <span>Pretoria</span>
-                <span>Kempton Park</span>
-            </div>
-
-        </div>
+      </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section section-dark">
-        <div class="container">
+    <!-- ==========================================
+OUR PROCESS
+========================================== -->
 
-            <div class="section-title reveal">
-                <span>Contact Us</span>
-                <h2>Request A Free Quote</h2>
-            </div>
+    <section class="process-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag"> HOW WE WORK </span>
 
-            <div class="contact-grid">
+          <h2>Our Simple 4-Step Process</h2>
 
-                <div class="contact-info reveal">
-
-                    <div class="contact-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+27 11 123 4567</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@voltproelectrical.co.za</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <div>
-                            <h4>WhatsApp</h4>
-                            <p>+27 82 555 1234</p>
-                        </div>
-                    </div>
-
-                    <a
-                        href="https://wa.me/27825551234"
-                        target="_blank"
-                        class="whatsapp-btn"
-                    >
-                        <i class="fa-brands fa-whatsapp"></i>
-                        Chat on WhatsApp
-                    </a>
-
-                </div>
-
-                <form id="contactForm" class="contact-form reveal">
-
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Full Name"
-                        required
-                    >
-
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Email Address"
-                        required
-                    >
-
-                    <input
-                        type="tel"
-                        id="phone"
-                        placeholder="Phone Number"
-                        required
-                    >
-
-                    <textarea
-                        id="message"
-                        rows="6"
-                        placeholder="Tell us about your project..."
-                        required
-                    ></textarea>
-
-                    <button type="submit" class="btn btn-primary">
-                        Submit Request
-                    </button>
-
-                    <p id="formMessage"></p>
-
-                </form>
-
-            </div>
-
+          <p>
+            From your first call to the final inspection, we make every project
+            smooth, transparent and stress-free.
+          </p>
         </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <div class="process-number">01</div>
+
+            <h3>Request a Quote</h3>
+
+            <p>
+              Contact us by phone or online and tell us about your electrical
+              project.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-number">02</div>
+
+            <h3>Site Inspection</h3>
+
+            <p>
+              We assess your property, discuss your requirements and provide a
+              transparent quotation.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-number">03</div>
+
+            <h3>Professional Installation</h3>
+
+            <p>
+              Our licensed electricians complete the work safely, efficiently
+              and to the highest standards.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-number">04</div>
+
+            <h3>Final Testing</h3>
+
+            <p>
+              Every installation is tested thoroughly to ensure quality,
+              compliance and complete customer satisfaction.
+            </p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ==========================================
+FEATURED PROJECTS
+========================================== -->
+
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag"> RECENT PROJECTS </span>
+
+          <h2>Electrical Work We're Proud Of</h2>
+
+          <p>
+            Take a look at some of our recent residential and commercial
+            electrical installations.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop"
+              alt="Commercial Electrical Project"
+            />
+
+            <div class="project-content">
+              <span>Commercial</span>
+
+              <h3>Office Power Upgrade</h3>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200&auto=format&fit=crop"
+              alt="Residential Electrical Project"
+            />
+
+            <div class="project-content">
+              <span>Residential</span>
+
+              <h3>Modern Home Rewiring</h3>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop"
+              alt="Lighting Installation"
+            />
+
+            <div class="project-content">
+              <span>Lighting</span>
+
+              <h3>Premium LED Installation</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+TESTIMONIALS
+========================================== -->
+
+    <section id="reviews" class="testimonials-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">CLIENT REVIEWS</span>
+
+          <h2>Trusted by Homeowners & Businesses</h2>
+
+          <p>
+            We pride ourselves on delivering exceptional workmanship and
+            customer service on every project.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+
+            <p>
+              "VoltPro exceeded our expectations. The team arrived on time,
+              completed the work professionally and left everything spotless.
+              Highly recommended."
+            </p>
+
+            <div class="client-info">
+              <h4>Michael Brown</h4>
+              <span>Homeowner</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+
+            <p>
+              "Excellent service from start to finish. Communication was clear,
+              pricing was fair and the quality of work was outstanding."
+            </p>
+
+            <div class="client-info">
+              <h4>Sarah Johnson</h4>
+              <span>Business Owner</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+
+            <p>
+              "Professional electricians who genuinely care about safety and
+              quality. We'll definitely use VoltPro again."
+            </p>
+
+            <div class="client-info">
+              <h4>David Wilson</h4>
+              <span>Commercial Client</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+FAQ
+========================================== -->
+
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">FAQ</span>
+
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-container">
+          <details class="faq-item" open>
+            <summary>Do you offer emergency electrical services?</summary>
+
+            <p>
+              Yes. Our electricians are available for emergency call-outs to
+              resolve urgent electrical issues quickly and safely.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Are your electricians licensed and insured?</summary>
+
+            <p>
+              Absolutely. Every member of our team is fully licensed, qualified
+              and insured for complete peace of mind.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you provide free quotations?</summary>
+
+            <p>
+              Yes. We provide transparent, no-obligation quotations before any
+              work begins.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+FINAL CTA
+========================================== -->
+
+    <section class="cta-section" id="contact">
+      <div class="cta-overlay"></div>
+
+      <div class="container cta-content">
+        <span class="section-tag">READY TO GET STARTED?</span>
+
+        <h2>Power Your Next Project With VoltPro</h2>
+
+        <p>
+          Whether it's a small repair or a large installation, our experienced
+          electricians are ready to help.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="tel:+15551234567" class="btn-primary"> Call Now </a>
+
+          <a href="#services" class="btn-secondary"> View Services </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+FOOTER
+========================================== -->
+
     <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Company Info -->
+          <div class="footer-column">
+            <h2 class="footer-logo">VOLT<span>PRO</span></h2>
 
-        <div class="container footer-grid">
+            <p>
+              Delivering reliable residential and commercial electrical services
+              with professional workmanship, safety and customer satisfaction at
+              the heart of every project.
+            </p>
+          </div>
 
-            <div>
-                <h3>VoltPro Electrical Services</h3>
-                <p>
-                    Professional electrical services for homes,
-                    businesses, and industrial properties.
-                </p>
+          <!-- Quick Links -->
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <ul>
+              <li><a href="#services">Services</a></li>
+
+              <li><a href="#about">About</a></li>
+
+              <li><a href="#projects">Projects</a></li>
+
+              <li><a href="#reviews">Reviews</a></li>
+
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="footer-column">
+            <h3>Our Services</h3>
+
+            <ul>
+              <li>Residential Electrical</li>
+
+              <li>Commercial Electrical</li>
+
+              <li>Emergency Repairs</li>
+
+              <li>Lighting Installation</li>
+
+              <li>Electrical Maintenance</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-column">
+            <h3>Contact</h3>
+
+            <p>📞 +27 12 345 6789</p>
+
+            <p>✉ info@voltpro.co.za</p>
+
+            <p>📍 Johannesburg, South Africa</p>
+
+            <div class="footer-social">
+              <a href="#">Facebook</a>
+
+              <a href="#">Instagram</a>
+
+              <a href="#">LinkedIn</a>
             </div>
-
-            <div>
-                <h4>Quick Links</h4>
-
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>Contact Information</h4>
-                <p>+27 11 123 4567</p>
-                <p>info@voltproelectrical.co.za</p>
-            </div>
-
-            <div>
-                <h4>Follow Us</h4>
-
-                <div class="socials">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                </div>
-            </div>
-
+          </div>
         </div>
 
-        <div class="copyright">
-            © 2026 VoltPro Electrical Services. All Rights Reserved.
-        </div>
+        <div class="footer-bottom">
+          <p>© 2026 VoltPro. All Rights Reserved.</p>
 
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
