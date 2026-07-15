@@ -348,7 +348,7 @@ HERO SECTION
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 90% center;
+  object-position:  center;
   z-index: 0;
   pointer-events: none;
 }
