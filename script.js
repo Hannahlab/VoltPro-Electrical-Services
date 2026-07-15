@@ -1,16 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const video = document.querySelector(".hero-video");
 
-  if (video) {
-    video.muted = true;
-    video.playsInline = true;
+  if (!video) return;
 
-    const playPromise = video.play();
+  video.muted = true;
+  video.defaultMuted = true;
+  video.playsInline = true;
 
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        console.log("Autoplay prevented.");
-      });
-    }
-  }
+  video.setAttribute("muted", "");
+  video.setAttribute("playsinline", "");
+  video.setAttribute("webkit-playsinline", "");
+
+  video.load();
+
+  video.play().catch((err) => {
+    console.log("Autoplay prevented:", err);
+  });
 });
